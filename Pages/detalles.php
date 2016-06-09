@@ -8,9 +8,8 @@
 </head>
 <body>
 	<header>
-		<h1>Detalles del Producto</h1>
+		<h1>Detalles</h1>
 		<a href="./carritodecompras.php" title="ver carrito de compras">
-			<img src="../imagenes/carrito.png">
 		</a>
 	</header>
 	<section>
@@ -27,8 +26,10 @@
 			<center>
 				<img src="../productos/<?php echo $f['Imagen'];?>"><br>
 				<span><?php echo $f['Nombre'];?></span><br>
-                <span>Precio: $<?php echo $f['Precio'];?></span><br>
-				<a href="../carritodecompras.php?id=<?php echo $f['Cod_producto']; ?>">Añadir al carrito de compras</a>
+                Descripcion del producto:<span><?php echo $f['Descripcion'];?></span><br>
+                Precio: $<span><?php echo $f['Precio'];?></span><br>
+                
+				<a href="../carritodecompras.php?id=<?php echo $f['Cod_producto']; ?>">Añadir al Carrito</a>
 			</center>
 		</div>
 	<?php

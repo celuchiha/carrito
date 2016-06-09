@@ -15,7 +15,7 @@
 <h2 align="center">&nbsp;</h2>
 
 <!--formulario de logueo-->
-<form name="form1" method="post" action="/carrito/checklogin2.php">
+<form name="form1" method="post" action="checklogin2.php">
 
  <table align="center">
  <td nowrap="nowrap" align="center"><h2>El mejor sitio web para realizar tus compras!!!  </h2>

@@ -105,7 +105,8 @@
 			echo '<center><h2>Total: $'.$total.'</h2></center>';
 		
 		?>
-		<center><a href="inicio.php">Ver catalogo</a></center>
+		<center><a href="inicio.php">Ver catalogo</a></center></br>
+        <center><a href="Pages/comprar.php">¡¡¡FINALIZAR COMPRA!!!</a></center>
 		
 		
 

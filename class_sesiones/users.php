@@ -16,15 +16,32 @@ class Users{
 	}
 	
 	public function login_in(){
+$host="localhost"; // Host name 
+$username="root"; // Mysql username 
+$password="74528075"; // Mysql password 
+$db_name="bd_carrito"; // base de datos 
+$tbl_name="usuarios"; // nombre de la tabla
+//session_start();
+
+
+
+// Conectar el servidor y seleccion de base de datos.
+$dbc = mysqli_connect($host, $username,$password, $db_name);
+if(!$dbc){
+echo "No se pudo conectar a la base de datos";
+exit;
+}
 		
-		$query = "SELECT * FROM usuarios
+		$sql= mysqli_query ($dbc,"SELECT * FROM usuarios
 		WHERE email = '".$_POST["email"]."' 
-			AND Contraseña = '".$_POST["Contraseña"]."'";
-		$this->result = $this->objDb->select($query);
-		$this->rows = mysqli_num_rows($this->result);
-		if($this->rows > 0){
+			AND Contraseña = '".$_POST["Contraseña"]."'");
+
+
+	 $numrows = mysqli_num_rows ($sql);
+
+	 if($numrows ==1){
 			
-			if($row=mysqli_fetch_array($this->result)){
+			if($row=mysqli_fetch_array($sql)){
 				
 				$this->objSe->init();
                 $this->objSe->set('email', $row["email"]);
