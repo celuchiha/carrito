@@ -26,8 +26,8 @@
           </td>
           </tr>
 <tr valign="baseline">
-          <td nowrap="nowrap" align="center"><h4>Correo Institucional:  
-            <input name="email" type="text" id="email"  />
+          <td nowrap="nowrap" align="center"><h4>Correo :  
+              <input name="email" type="text" id="email"  />
           </h4>
       </h5></td>        
          
